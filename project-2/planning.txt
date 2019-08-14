@@ -1,0 +1,34 @@
+TESTING STUFF:
+
+
+kill.cs.rutgers.edu:
+    Starts at client:
+
+mx.rutgers.com
+rutgers.com
+www.google.edu
+grep.cs.rutgers.edu
+bit.ly
+happi.ly
+MX.RUTGERS.EDU
+
+
+python ts_edu.py tsEduListenPort
+python ts_com.py tsComListenPort
+python rs.py rsListenPort tsEduListenPort tsComListenPort
+python client.py rsHostname rsListenPort
+
+
+
+
+
+
+CLIENT --> RS --> TS_COM OR TS_EDU --> RS --> CLIENT
+
+Best case:
+    CLIENT --> RS --> CLIENT
+
+Other Cases:
+    CLIENT --> RS --> TS_COM --> RS --> CLIENT
+    CLIENT --> RS --> TS_EDU --> RS --> CLIENT
+
