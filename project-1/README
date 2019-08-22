@@ -1,0 +1,16 @@
+﻿0. Jerry Zhang jz570
+
+1. Briefly discuss how you implemented your recursive client functionality.
+It uses an iterative method, which after connecting receives information from the RS and TS, separate it line by line and organize each of the line contents. Each line contains information about the hostname, ip, and a flag. If the host name matches, it lets the client know that the message was successfully sent/received. Any non matching hostnames would return no hosts found. 
+
+2. Are there known issues or functions that aren't working currently in your
+   attached code? If so, explain.
+The function that I was not able to test out is running it on a different machine. With only 1 ilab account, the program is only able to run on 1 machine at a time. 
+
+
+3. What problems did you face developing code for this project?
+One problem was dealing with hostnames that were had uppercase in the name. To make it completely case-insensitive, I used pythons lower() function to convert uppercase letters into lowercase. 
+
+
+4. What did you learn by working on this project?
+I’ve learn how to implement python libraries to create a simple DNS system. For example implementing threading to wait on sent and received messages. Utilizing sockets to send messages across networks, especially different machine networks. In general understanding more about how networks communicate to each other. 
